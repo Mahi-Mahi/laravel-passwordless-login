@@ -54,7 +54,8 @@ class LoginUrl
                 'uid'           => $this->user->getAuthIdentifier(),
                 'redirect_to'   => $this->redirect_url,
                 'user_type'     => UserClass::toSlug(get_class($this->user)),
-            ]
+            ],
+            false
         );
     }
 }
